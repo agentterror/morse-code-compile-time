@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>c++quiz</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>WELCOME TO C++ QUIZ</h1>
+        Q1.Which of the following is the correct syntax for declaring a variable in C++?
+        <br>
+        <input type="radio" name="question1" id="correct1">int myVariable;
+        <br>
+        <input type="radio" name="question1">variable int myVariable;
+        <br>
+        <input type="radio" name="question1">myVariable = int;
+        <br>
+        <input type="radio" name="question1">myVariable = int;
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        Q2. Which of the following is the correct syntax for printing a message to the console in C++?
+        <br>
+        <input type="radio" name="question2" id="correct2"> std::cout << "Hello, world!" << std::endl;
+        <br>
+        <input type="radio" name="question2"> console.log("Hello, world!");
+        <br>
+        <input type="radio" name="question2">print("Hello, world!"); 
+        <br>
+        <input type="radio" name="question2"> cout << "Hello, world!";
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        Q3. What is the difference between a variable and a constant in C++?
+        <br>
+        <input type="radio" name="question3">Variables can be changed, while constants cannot.
+        <br>
+        <input type="radio" name="question3">Constants are initialized at compile time, while variables are initialized at runtime.
+        <br>
+        <input type="radio" name="question3">Constants are initialized at compile time, while variables are initialized at runtime.
+        <br>
+        <input type="radio" name="question3" id="correct3"> All of the above
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        Q4.What is the difference between a pass-by-value and a pass-by-reference parameter in C++?
+        <br>
+        <input type="radio" name="question4" id="correct4">Pass-by-value parameters are copies of the actual arguments, while pass-by-reference parameters are references to the actual arguments.
+        <br>
+        <input type="radio" name="question4"> Pass-by-value parameters are stored in read-only memory, while pass-by-reference parameters are stored in read-write memory.
+         <br>
+        <input type="radio" name="question4"> Pass-by-value parameters are stored in read-only memory, while pass-by-reference parameters are stored in read-write memory.
+         <br>
+        <input type="radio" name="question4">None of the above
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="submit" name="submit" value="submitquiz" onclick="result()">
+
+        <script type="text/javascript">
+        function result() {
+          var score = 0;
+        
+          if (document.getElementById('correct1').checked) {
+            score++;
+          }
+        
+          if (document.getElementById('correct2').checked) {
+            score++;
+          }
+        
+          if (document.getElementById('correct3').checked) {
+            score++;
+          }
+        
+          if (document.getElementById('correct4').checked) {
+            score++;
+          }
+          document.write("your score is:"+score)
+        }
+        </script>
+    </body>
+</html>
