@@ -1,0 +1,3261 @@
+<html>
+	<head>
+		<title>big basket</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+		#a1{
+		background-color:green;
+		}
+		#a2{
+		background-color:blue;
+		border-style:hidden;
+		margin-left:1190px;
+		}
+		#a4{
+		background-color:blue;
+		}
+		#demo:hover{
+		background-color:red;
+		}
+		ai{
+		border-style:solid;
+		background-color:pink;
+		margin-left:30px;
+		}
+		b{
+		border-style:solid;
+		background-color:pink;
+		margin-left:50px;
+		}
+		#a10{
+		background-color:black;}
+		
+		</style>
+		
+	</head>
+	<body>
+	<center>
+		<h1 id="a1" style="color:yellow"><marquee>welcome to big basket. enjoy your visit</marquee></h1>
+	</center>
+		<button id="a2" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mymodal">login/register</button>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">BIG BASKET:</a>
+    
+				</div>
+			
+				
+				<ul class="nav navbar-nav">
+					<li><img src="data:image/png;base64,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" height="50px" width="50px"></li>
+								<li><input type="text" class="form-control" id="name" placeholder="search for products"></li>
+								<li><button class="btn btn-default"><span class="glyphicon glyphicon-search"></span>select location</button></li>
+								
+				</ul>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="about.html" target="blank">about</a></li>
+							<li><a href="vegatables.html" target="blank">exotic fruits and vegetables</a></li>
+							<li><a href="tea.html">tea</a></li>
+							<li><a href="ghee.html">ghee</a></li>
+							<li><a href="nadani.html">nandini</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+		<div class="modal fade" id="mymodal" role="dialog" id="a4">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">registration page:</h3>
+					</div>
+					<div class="modal-body">
+						<div class="container" style="color:pink">
+					<h2>please fill the details:</h2>
+						<form class="form-horizontal">
+								<div class="form-group">
+									<label class="control-label col-sm-2" for="email">email:</label>
+										<div class="col-sm-4">
+											<input type="email" class="form-control" id="email" placeholder="enter email">
+										</div>
+								</div>
+								<br>
+						<br>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="name">username:</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="name" placeholder="enter username">
+									</div>
+									<br>
+									<br>
+							</div>
+							
+							
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="name">password:</label>
+									<div class="col-sm-4">
+										<input type="number" class="form-control" id="name" placeholder="enter password">
+									</div>
+									<br>
+									<br>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="name">verify password:</label>
+									<div class="col-sm-4">
+										<input type="number" class="form-control" id="name" placeholder="enter password again">
+									</div>
+									<br>
+									<br>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<button type="submit" class="btn btn-success btn-lg"><a href="reponse.html">submit</a></button>
+									<button type="reset" class="btn btn-danger btn-lg"><a href="search2.html">reset</a></button>
+								</div>
+						</div>
+						</form>
+					</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	<div class="container">
+		<div class="dropdown">
+			<button class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown">shop by category<span class="caret"></span></button>
+			<ul class="dropdown-menu">
+				<li class="dropdown-header">vegetable</li>
+				<li><a href="#">carrot</a></li>
+				<li><a href="#">bringal</a></li>
+				<li><a href="#">tomato</a></li>
+				<li><a href="#">potato</a></li>
+				<li class="dropdown-header"></li>
+				<li class="dropdown-header">fruits</li>
+				<li><a href="#">apple</a></li>
+				<li><a href="#">guava</a></li>
+				<li><a href="#">grapes</a></li>
+				<li><a href="#">orange</a></li>
+			</ul>
+		</div>
+	</div>
+				
+	<center>
+		<img src="https://www.bigbasket.com/media/uploads/banner_images/B2C022308704-16155-460-DT-all-cm-290224.jpg?tr=w-3840,q=80" height="400px" width="900px" ><br>
+	</center>
+	<br>
+	<button type="button" class="btn btn-default btn-lg"><a href="https://www.bigbasket.com/cl/eggs-meat-fish/?nc=b-cp-hp-sec3&b_t=cp_hp_sec3&b_camp=hp_topstrip_m_250923_01png&t_from_ban=7897212&t_pos=1&t_ch=desktop" target="blank">EGGS,MEAT AND FISHS</a></button>
+	<button type="button" class="btn btn-info btn-lg"><a href="https://www.tatadigital.com/home" target="blank">NEUPASS</a></button>
+	<button type="button" class="btn btn-success btn-lg"><a href="https://www.bigbasket.com/pc/beauty-hygiene/health-medicine/ayurveda/?nc=b-cp-hp-sec3&b_t=cp_hp_sec3&b_camp=hp_topstrip_m_250923_03png&t_from_ban=7897310&t_pos=3&t_ch=desktop">AYURVADA</a></button>
+	<button type="button" class="btn btn-default btn-lg"><a href="https://www.bigbasket.com/sp/2307001-buy-more-save-more/?nc=b-cp-hp-sec3&b_t=cp_hp_sec3&b_camp=hp_topstrip_m_250923_04png&t_from_ban=7897359&t_pos=4&t_ch=desktop" target="blank">BUY MORE SAVE MORE</a></button>
+	<button type="button" class="btn btn-default btn-lg"><a href="https://www.bigbasket.com/sp/2311728-deals-week/?nc=b-cp-hp-sec3&b_t=cp_hp_sec3&b_camp=hp_topstrip_m_250923_05png&t_from_ban=7897408&t_pos=5&t_ch=desktop" target="blank">Deals of the week</a></button>
+	<button type="button" class="btn btn-default btn-lg"><a href="https://www.bigbasket.com/sp/2306008-combos/?nc=b-cp-hp-sec3&b_t=cp_hp_sec3&b_camp=hp_topstrip_m_250923_06png&t_from_ban=7897457&t_pos=6&t_ch=desktop" target="blank">Combo Store</a></button>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+					<img src="https://www.bigbasket.com/media/uploads/p/m/10000025_27-fresho-banana-robusta.jpg?tr=w-3840,q=80" alt="" width="200px" height="200px">
+					<small>fresho</small>
+					<h3>Banana-robusta</h3>
+					<form>
+						<input type="number" placeholder="enter the grams in numbers">
+					</form>
+					<h3>$29</h3>
+					
+						<div class="dropdown">
+							<button class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown">+Add to your cart<span class="caret"></span></button>
+								<ul class="dropdown-menu">
+									<li><a href="#">added to your cart</a></li>
+								</ul>
+						</div>
+								
+			</div>
+			
+			<div class="col-md-3">
+					<img src="https://www.bigbasket.com/media/uploads/p/m/10000070_15-fresho-carrot-orange.jpg?tr=w-3840,q=80" alt="" width="200px" height="200px">
+					<small>fresho</small>
+					<h3>carrot-orange</h3>
+					<form>
+						<input type="number" placeholder="enter the grams in numbers">
+					</form>
+					<h3>$58</h3>
+					
+						<div class="dropdown">
+							<button class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown">+Add to your cart<span class="caret"></span></button>
+								<ul class="dropdown-menu">
+									<li><a href="#">added to your cart</a></li>
+								</ul>
+						</div>
+					
+					
+			</div>
+			<div class="col-md-3">
+					<img src="https://www.bigbasket.com/media/uploads/p/m/10000074_19-fresho-cauliflower.jpg?tr=w-3840,q=80" alt="" width="200px" height="200px">
+					<small>Fresho</small>
+					<h3>Cauliflower</h3>
+					<form>
+						<input type="number" placeholder="enter the grams in numbers">
+					</form>
+					<h3>$58</h3>
+					
+						<div class="dropdown">
+							<button class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown">+Add to your cart<span class="caret"></span></button>
+								<ul class="dropdown-menu">
+									<li><a href="#">added to your cart</a></li>
+								</ul>
+						</div>
+					
+					
+			</div>
+			<div class="col-md-3">
+					<img src="https://www.bigbasket.com/media/uploads/p/m/10000326_14-fresho-coriander-leaves.jpg?tr=w-3840,q=80" alt="" width="200px" height="200px">
+					<small>Fresho</small>
+					<h3>Coriander Leaves</h3>
+					<form>
+						<input type="number" placeholder="enter the grams in numbers">
+					</form>
+					<h3>$58</h3>
+					
+						<div class="dropdown">
+							<button class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown">+Add to your cart<span class="caret"></span></button>
+								<ul class="dropdown-menu">
+									<li><a href="#">added to your cart</a></li>
+								</ul>
+						</div>
+					
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="container">
+			<h2>carousel</h2>
+			<div id="mycarousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#mycarousel" data-slide-to="1"></li>
+					<li data-target="#mycarousel" data-slide-to="2"></li>
+					<li data-target="#mycarousel" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_babycare_250923_400.jpg?tr=w-3840,q=80" alt="" style="width:100%;">
+						<div class="carousel-caption">
+							<h1>picture1</h1>
+							<p>it is made using carousel</p>
+						</div>
+					</div>
+					
+					<div class="item">
+						<img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_petstore_250923_400.jpg?tr=w-3840,q=80" alt="" style="width:100%;" >
+						<div class="carousel-caption">
+							<h1>picture2</h1>
+							<p>it is made using carousel</p>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="https://www.bigbasket.com/media/uploads/banner_images/hp_bcd_m_bcd_250923_400.jpg?tr=w-3840,q=80" alt="" style="width:100%;">
+						<div class="carousel-caption">
+							<h1>picture3</h1>
+							<p>it is made using carousel</p>
+						</div>
+					</div>
+			
+					<div class="item">
+						<img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_health_suppliment_250923_400.jpg?tr=w-3840,q=80" alt="" style="width:100%;" >
+						<div class="carousel-caption">
+							<h1>picture1</h1>
+							<p>it is made using carousel</p>
+						</div>
+					</div>
+				</div>
+					
+				<a class="left carousel-control" href="#mycarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">prevoius</span>
+				</a>
+				
+				<a class="right carousel-control" href="#mycarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">next</span>
+				</a>
+			</div>
+		</div>
+		<br>
+		         <h1>Top offers available:</h1>
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/2b94a9cf-895f-460d-849a-1eee860c974c/hp_dow-topoffersStorefront_m_480_250723_01.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/2b94a9cf-895f-460d-849a-1eee860c974c/hp_big-packs-topoffersStorefront_m_480_250723_02.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/2b94a9cf-895f-460d-849a-1eee860c974c/hp_combos-topoffersStorefront_m_480_250723_03.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/2b94a9cf-895f-460d-849a-1eee860c974c/hp_30-corner-topoffersStorefront_m_480_250723_04.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<br>
+				<br>
+				<h1>Bank offers:</h1>
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/3c5df782-1789-4bea-8403-9fd766652b34/t1_hp_aff_m_neucard-5_360_010324.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/3c5df782-1789-4bea-8403-9fd766652b34/t1_hp_aff_m_citi_360_010324.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/3c5df782-1789-4bea-8403-9fd766652b34/t1_hp_aff_m_idfc-cc_360_010324.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/3c5df782-1789-4bea-8403-9fd766652b34/t1_hp_aff_m_kotak_360_010324.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<br>
+				<br>
+				<br>
+				<br>
+				<h1>fruits and vegetables:</h1>
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/41a0810e-1fc3-46e4-9d2c-7d9e79e0aa29/hp_f&v_m_fresh-vegetables_480_250923.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/41a0810e-1fc3-46e4-9d2c-7d9e79e0aa29/hp_f&v_m_fresh-fruits_480_250923.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/41a0810e-1fc3-46e4-9d2c-7d9e79e0aa29/hp_f&v_m_cuts-&-exotics_480_250923.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/41a0810e-1fc3-46e4-9d2c-7d9e79e0aa29/hp_f&v_m_herbs-&-seasoning_480_250923.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<br>
+				<br>
+				<h1>Your Daily Staples:</h1>
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_atta-flour-staplesStorefront_m_480_250323_01.jpg?tr=w-3840,q=80" height="200px" width="200px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_rice-staplesStorefront_m_480_250323_02.jpg?tr=w-3840,q=80" height="200px" width="200px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_dals-pulses-staplesStorefront_m_480_250323_03.jpg?tr=w-3840,q=80" height="200px" width="200px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_cooking-oils-staplesStorefront_m_480_250323_04.jpg?tr=w-3840,q=80" height="200px" width="200px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_dry-fruits-staplesStorefront_m_480_250323_05.jpg?tr=w-3840,q=80" height="200px" width="200px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_salt-staplesStorefront_m_480_250323_06.jpg?tr=w-3840,q=80" height="200px" width="200px">
+				<br>
+				<br>
+				<br>
+				<br>
+				<h1>Beverages:</h1>
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/e4a9856b-dc3f-4927-a5a1-8edfe8d7dc38/hp_bev_m_health-drinks-&-supplements_480_250923.jpg?tr=w-3840,q=80"alt="" height="200px" width="200px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/e4a9856b-dc3f-4927-a5a1-8edfe8d7dc38/hp_bev_m_tea-&-coffee_480_250923.jpg?tr=w-3840,q=80"alt="" height="200px" width="200px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/e4a9856b-dc3f-4927-a5a1-8edfe8d7dc38/hp_bev_m_flavoured-&-soya-milk_480_250923.jpg?tr=w-3840,q=80"alt="" height="200px" width="200px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/e4a9856b-dc3f-4927-a5a1-8edfe8d7dc38/hp_bev_m_juices_480_250923.jpg?tr=w-3840,q=80"alt="" height="200px" width="200px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/e4a9856b-dc3f-4927-a5a1-8edfe8d7dc38/hp_bev_m_energy-drinks_480_250923.jpg?tr=w-3840,q=80"alt="" height="200px" width="200px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/e4a9856b-dc3f-4927-a5a1-8edfe8d7dc38/hp_bev_m_soft-drinks-&-more_480_250923.jpg?tr=w-3840,q=80"alt="" height="200px" width="200px">
+				<br>
+				<br>
+				<br>
+				<br>
+				<h1>Snack store:</h1>
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/09ece9f7-7ac9-4d1e-afbb-f8ac572add38/hp_sbf_m_biscuits-&-namkeens_480_250923.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/09ece9f7-7ac9-4d1e-afbb-f8ac572add38/hp_sbf_m_breakfast-cereals_480_250923.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/09ece9f7-7ac9-4d1e-afbb-f8ac572add38/hp_sbf_m_pasta-sauces-&-more_480_270723.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/09ece9f7-7ac9-4d1e-afbb-f8ac572add38/hp_sbf_m_sweet-cravings_480_250923.jpg?tr=w-3840,q=80" height="300px" width="300px">
+				<br>
+				<br>
+				<br>
+				<br>
+				<h1>Cleaning & Household</h1>
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/fefafda6-5ef7-4ed2-8fee-2574720666d7/hp_c&h_m_cleaners_480_250723.jpg?tr=w-3840,q=80" alt="" width="300px" height="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/fefafda6-5ef7-4ed2-8fee-2574720666d7/hp_c&h_m_detergents-&-fabric-care_480_250723.jpg?tr=w-3840,q=80" alt="" width="300px" height="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/fefafda6-5ef7-4ed2-8fee-2574720666d7/hp_c&h_m_paper-disposables-&-garbage-bags_480_250723.jpg?tr=w-3840,q=80" alt="" width="300px" height="300px">
+				<img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/fefafda6-5ef7-4ed2-8fee-2574720666d7/hp_c&h_m_freshner_480_250723.jpg?tr=w-3840,q=80" alt="" width="300px" height="300px">
+				<br>
+				<br>
+				<br>
+				<br>
+				<div id="a10">
+					<center>
+					<h2 style="color:white">Cities We Serve</h2>
+						<h3 style="color:white"><a href="#">Srirangapatna
+|
+Jashpur
+|
+North Paravur
+|
+Pratapgarh District
+|
+Guntakal
+|
+Muzaffarnagar District
+|
+Meerut District
+|
+Ludhiana District
+|
+Hooghly District
+|
+Gonda District
+|
+Fatehgarh Sahib District
+|
+Baghpat District
+|
+Amroha District
+|
+Mahabubnagar
+|
+Korba
+|
+Varanasi
+|
+Kanakapura
+|
+Khurai
+|
+Raisen
+|
+Gondia
+|
+Rahatgarh
+|
+Bhiwadi
+|
+Goa
+|
+Bahadurgarh
+|
+Raichur
+|
+Sindudurg
+|
+Sangareddy
+|
+Kurnool
+|
+Jadcherla
+|
+Muzaffarpur
+|
+JAGANNATHPRASAD
+|
+Hubli
+|
+Prakasam
+|
+Nalgonda
+|
+Karnal
+|
+Panipat
+|
+Rohtak
+|
+Davanagere
+|
+Patiala
+|
+Trichy
+|
+Prakasam District
+|
+Haridwar
+|
+Vinukonda
+|
+Kotagiri
+|
+Muthukulathur
+|
+Pathapatnam
+|
+Haripal
+|
+Kodumudi
+|
+Sivakasi
+|
+Pudukkottai
+|
+Narsipatnam
+|
+Narasannapeta
+|
+Kurupam
+|
+Pushpavanam
+|
+Chodavaram
+|
+Gudalur
+|
+Pennadam
+|
+Addateegala
+|
+Chirala
+|
+Yerragonda Palem
+|
+Kukanoor
+|
+Kushalnagar
+|
+Holenarasipur
+|
+Madakasira
+|
+Kavali
+|
+Eedu
+|
+Bagalkot
+|
+Mahalingpur
+|
+Humnabad
+|
+Yaragatti
+|
+Palani
+|
+Chilakaluripet
+|
+Chikkamagalur
+|
+Narayanpet
+|
+Jannaram
+|
+Rayaparthi
+|
+Panchkula
+|
+Metpally
+|
+Kodad
+|
+Mahadevpur
+|
+Rudrangi
+|
+Lunglei
+|
+Narmetta
+|
+Yellareddy
+|
+Bhangar
+|
+Pattukkottai
+|
+Aluva
+|
+Kayamkulam
+|
+Ezhupunna
+|
+Pangodu
+|
+Attingal
+|
+Edappal
+|
+Cherpulassery
+|
+chungatra
+|
+Koothattukulam
+|
+Manjeshwar
+|
+Choutuppal
+|
+Ladakh
+|
+Mananthavadi
+|
+Thodupuzha
+|
+Kattappana
+|
+Vadakara
+|
+Kuthuparamba
+|
+Sonipat
+|
+Thamarassery
+|
+Mundakayam
+|
+East Kameng
+|
+Mogullapally
+|
+East Garo Hills
+|
+Memari
+|
+Bolpur
+|
+Bangaon
+|
+Habra
+|
+Tamluk
+|
+Basirhat
+|
+Barakar
+|
+Chittaranjan
+|
+Gohana
+|
+Amritsar
+|
+West Kameng
+|
+West Khasi Hills
+|
+West Sikkim
+|
+Martur
+|
+West Tripura
+|
+Allagadda
+|
+Kittur
+|
+Motebeennura
+|
+Haveri
+|
+Kalghatgi
+|
+Sathupally
+|
+Harihara
+|
+Gadag
+|
+Haliyal
+|
+KHALARI-JR
+|
+Katol
+|
+Kendujhar
+|
+KENDRAPARA
+|
+Kawardha
+|
+Karimganj
+|
+Karbi Anglong
+|
+Kanker
+|
+Khergam
+|
+Masrakh
+|
+Bakhtiarpur
+|
+Hassan
+|
+Arambag
+|
+Baripada
+|
+Soro
+|
+Shadnagar
+|
+Bhongir
+|
+Kazipet
+|
+Athani
+|
+Vyara
+|
+CHHENDIPADA
+|
+CHHAPRA
+|
+Chatra
+|
+Changlang
+|
+Howrah
+|
+Hooghly
+|
+HINJILICUT
+|
+CHIKITI
+|
+Hosanagar
+|
+Malavalli
+|
+IMAMGANJ
+|
+ILIPUR
+|
+Koratagere
+|
+Magadi
+|
+Madikeri
+|
+Dabaspete
+|
+South Tripura
+|
+SULTANGANJ
+|
+South Garo Hills
+|
+South Sikkim
+|
+SURAJGARHA
+|
+Surguja
+|
+Sundergarh
+|
+Supaul
+|
+SWARUPNAGAR
+|
+Thoubal
+|
+Shorapur
+|
+Afzalpur
+|
+Chincholi
+|
+Dimapur
+|
+Jamkhandi
+|
+Sullia
+|
+Assaigoli
+|
+Virajpet
+|
+Pandua
+|
+Koppal
+|
+Jamuria
+|
+Khairabad
+|
+Byndoor
+|
+Vaidpura
+|
+Amalapuram
+|
+Addanki
+|
+Yavatmal
+|
+Wardha
+|
+Naharlagun
+|
+Ranebennur
+|
+Shiggaon
+|
+Savadatti
+|
+Sullurupeta
+|
+Makrana
+|
+Kuchaman City
+|
+Warora
+|
+RUNNISAIDPUR
+|
+RUNNISAIDPUR
+|
+Udham-Singh-Nagar
+|
+Nellore
+|
+Ambala
+|
+Agra
+|
+Ramgarh
+|
+Sircilla District
+|
+South 24 Parganas District
+|
+Sultanpur District
+|
+Madanpur
+|
+Faridabad
+|
+Raipur
+|
+Saiha
+|
+Saharsa
+|
+Malur
+|
+Hardoi
+|
+Darbhanga
+|
+Gaya
+|
+Motihari
+|
+Angul
+|
+Chhindwara
+|
+Ganjam
+|
+Bassi
+|
+Hindaun
+|
+Lalsot
+|
+Karauli
+|
+Dausa
+|
+Saoner
+|
+Gangapur City
+|
+Chandrapur
+|
+KAMAKHYANAGAR
+|
+KALYANI
+|
+Kandhamal
+|
+Kamrup
+|
+Amaravathi
+|
+Gwalior
+|
+Rajkot
+|
+Allahabad
+|
+Bareilly
+|
+Jodhpur
+|
+Palakkad
+|
+Palwal
+|
+Kalinga Nagar
+|
+Chinhat
+|
+Ottapidaram
+|
+Sriperumbudur
+|
+Thuckalay
+|
+Mayiladuthurai
+|
+Vilathikulam
+|
+Kovilpatti
+|
+Belthangady
+|
+Moodabidri
+|
+Kundapura
+|
+Yellapur
+|
+Mudhol
+|
+Kadaba
+|
+Hoovina Hadagali
+|
+Sringeri
+|
+Kanjarakatte
+|
+Bijapur
+|
+S Kota
+|
+Gajapatinagaram
+|
+Araku
+|
+Vidyanagar
+|
+Koyyuru
+|
+Seetharampram
+|
+Bheemunipatnam
+|
+Garividi
+|
+Palakonda
+|
+Bobbili
+|
+Amarapuram
+|
+Kaikaluru
+|
+Saundatti
+|
+Gokak
+|
+Bapatla
+|
+Atmakur-AP
+|
+Chimakurthy
+|
+Jangareddygudem
+|
+Yadgir
+|
+Belur
+|
+Nuzvid
+|
+Pamuru
+|
+Turuvukere
+|
+Basavana Bagewadi
+|
+Manipal
+|
+Mudarangady
+|
+Ramagundam
+|
+Nereducharla
+|
+Asifabad
+|
+Mulugu
+|
+Bhupalpally
+|
+Koratla
+|
+Kusumanchi
+|
+Tungaturthi
+|
+Tiryani
+|
+Dharmapuri-TS
+|
+Tiruvalla
+|
+Iddukki
+|
+Kannapuram
+|
+Narikkuni
+|
+Adoor
+|
+Kuttiady
+|
+Adimali
+|
+Kallikkad
+|
+Neyyattinkara
+|
+Haripad
+|
+Shahabad Markanda
+|
+Bhagpat
+|
+Srinagar
+|
+BADAMBA
+|
+Vijayawada-Guntur
+|
+Lakhisarai
+|
+Nasirabad
+|
+Aurangabad(BH)
+|
+Jammu Kashmir
+|
+Andaman and Nicobar
+|
+Ramannapeta
+|
+Padmajiwadi
+|
+Huzur Nagar
+|
+Madgulapally
+|
+Patancheru
+|
+Achampet
+|
+Zahirabad
+|
+Choppadandi
+|
+Rampur
+|
+Boath Buzurg
+|
+Kosgi
+|
+Ajmer
+|
+Parvathipuram
+|
+Purba Bardhaman
+|
+Sahibganj
+|
+Salcete
+|
+Paderu
+|
+Ichchapuram
+|
+Karimnagar
+|
+Chintapalli
+|
+Thiruvarur
+|
+Thanjavur
+|
+Marthandam
+|
+Palasa
+|
+Maharajapuram
+|
+Sri City
+|
+Aurangabad
+|
+Malerkotla
+|
+Kheri
+|
+West Champaran
+|
+Mandya
+|
+Jehanabad
+|
+Dhamnod
+|
+Medinipur
+|
+Ukhra
+|
+Kozhikode
+|
+Nainital
+|
+Koraput
+|
+Shilong
+|
+Tawang
+|
+Paschim Bardhaman
+|
+Rupnagar
+|
+Faridkot
+|
+Narsinghpur
+|
+Khorda
+|
+KHUNTI
+|
+Kiphire
+|
+Kishanganj
+|
+Upper Siang
+|
+Warangal
+|
+Hanamkonda
+|
+Jajpur
+|
+Kannauj
+|
+Farrukhabad
+|
+Bidhuna
+|
+Chhibramau
+|
+Khandwa
+|
+Botad
+|
+Lakhimpur
+|
+Bangarmau
+|
+Tirap
+|
+West Siang
+|
+Guntur-Rural
+|
+BONGAON
+|
+Boudh
+|
+BRAHMAPUR
+|
+BRAJRAJNAGAR
+|
+Cachar
+|
+Champhai
+|
+CHANDANKIYARI
+|
+CHANDBALI
+|
+CHANDIKHOL
+|
+Ongole
+|
+Gokavaram
+|
+Vellore
+|
+Thiruvananthapuram
+|
+Ujjain
+|
+Sikar
+|
+Nadia
+|
+Bardoli
+|
+Saran
+|
+Thrissur
+|
+Chittor District
+|
+Shambhu
+|
+North 24 Parganas
+|
+Godda
+|
+Sasaram
+|
+Hasanpur
+|
+Wani
+|
+Ghughus
+|
+Shrimadhopur
+|
+Chameli
+|
+Amritsar
+|
+Mancherial
+|
+Jagtial
+|
+Kumta
+|
+Gopalganj
+|
+GOPALAPUR
+|
+Goalpara
+|
+Giridh
+|
+Hailakandi
+|
+Gumla
+|
+GUMIA
+|
+GOPALNAGAR
+|
+HANSKHALI
+|
+HAJIPUR
+|
+Tezpur
+|
+Coimbatore
+|
+NIMAPARA
+|
+Surat
+|
+Serchhip
+|
+Mysore
+|
+Vadodara
+|
+SALIPUR
+|
+Hyderabad
+|
+SARAIYA
+|
+Saran
+|
+Mumbai
+|
+Nashik
+|
+SHEONAR
+|
+Sibsagar
+|
+Warud
+|
+Chandur Bazar
+|
+Kapurthala
+|
+Haryana
+|
+Kalluru
+|
+Kalmeshwar
+|
+Morshi
+|
+Puttur
+|
+Vapi
+|
+Bhandara
+|
+Ganj Basoda
+|
+Bhavnagar
+|
+Thiruttani
+|
+Srikalahasti
+|
+Nagari
+|
+Papum Pare
+|
+North Sikkim
+|
+North Tripura
+|
+Kokrajhar
+|
+Cuddalore
+|
+Bhopal
+|
+Jaipur
+|
+Ahmedabad-Gandhinagar
+|
+Noida-Ghaziabad
+|
+Meerut
+|
+Vizianagaram
+|
+Medak District
+|
+Tiruppur
+|
+Nizamabad District
+|
+Kamareddy District
+|
+Lucknow Rural
+|
+Noida Rural
+|
+Chennai Rural
+|
+Vizag Rural
+|
+Dhanbad
+|
+Bangalore Rural
+|
+Kolasib
+|
+Sholinghur
+|
+Palacode
+|
+Annur
+|
+Namakkal
+|
+Byadagi
+|
+Thuraiyur
+|
+Tenkasi
+|
+Thisayanvilai
+|
+Mudigere
+|
+Vitla
+|
+Ramanagara
+|
+Ramanathapura
+|
+Gulbarga
+|
+Rona
+|
+Kerur
+|
+Chikkanayakanahalli
+|
+Koduru
+|
+Pileru
+|
+Kambadur
+|
+Puttaparthi
+|
+Puttur-AP
+|
+Mudigubba
+|
+Nandikotkur
+|
+Gooty
+|
+Venkatagirikota
+|
+Rayachoti
+|
+Shoranur
+|
+Rajampet
+|
+Atmakur
+|
+Alur
+|
+ARRAH
+|
+Doranala
+|
+Kadiri
+|
+Proddatur
+Puttur-AP
+|
+Mudigubba
+|
+Nandikotkur
+|
+Gooty
+|
+Venkatagirikota
+|
+Rayachoti
+|
+Shoranur
+|
+Rajampet
+|
+Atmakur
+|
+Alur
+|
+ARRAH
+|
+Doranala
+|
+Kadiri
+|
+Proddatur
+|
+Cuddapah
+|
+Perambra
+|
+Nedumkandam
+|
+Malappuram
+|
+Sankaramangalam
+|
+Valanchery
+|
+Kollam
+|
+Mahe
+|
+ARWAL
+|
+Dhandhuka
+|
+Hayathnagar
+|
+Gudur-TS
+|
+Jainoor
+|
+Kaghaznagar
+|
+Mominpet
+|
+Husnabad
+|
+Dahegaon
+|
+Pregnapur
+|
+Kollapur
+|
+Danthalapally
+|
+Armoor
+|
+Kumily
+|
+KUCHAIKOTE
+|
+Koriya
+|
+Gudiyatham
+|
+Thalassery
+|
+Lohit
+|
+Nawanshahr
+|
+Lohardaga
+|
+Lucknow
+|
+Lawngtlai
+|
+WAZIRGANJ
+|
+Halflong
+|
+Koruprolu
+|
+Yemmiganur
+|
+PIPILI
+|
+Jamtara
+|
+Umreth
+|
+Bareja
+|
+Pardi
+|
+Nayagarh
+|
+Ladwa
+|
+Garkha
+|
+Venkatgiri
+|
+Naidupeta
+|
+Malmaliya
+|
+Lakhimpur
+|
+KUCHINDA
+|
+Angul
+|
+Latehar
+|
+Bantwal
+|
+Guntur
+|
+Sanawad
+|
+Sitamarhi
+|
+Kekri
+|
+Gulbaraga
+|
+Sambalpur
+|
+Jharsuguda
+|
+Mandsaur
+|
+Dumraon
+|
+Rourkela
+|
+Tripura
+|
+Samastipur
+|
+Jabalpur
+|
+Utnoor
+|
+Vidisha
+|
+Bishnupur
+|
+BHUBAN
+|
+Aizawl
+|
+Birbhum
+|
+Bilaspur(CGH)
+|
+Jaintia Hills
+|
+BENIPUR
+|
+Bhojpur
+|
+BHARWARA
+|
+Lower Dibang Valley
+|
+GOLAGHAT
+|
+BONGAIGAON
+|
+SILCHAR
+|
+JORHAT
+|
+DULIAJAN
+|
+NAZIRA
+|
+SIVASAGAR
+|
+Rajnandgaon
+|
+MANGALDOI
+|
+BAIHATA
+|
+Navsari
+|
+Hoshangabad
+|
+Patan
+|
+Siddhpur
+|
+Unjha
+|
+Kalol
+|
+Kadi
+|
+Himatnagar
+|
+Mehsana
+|
+PLASSEY
+|
+Puri
+|
+Garhwa
+|
+Gariaband
+|
+GARJANPUR
+|
+Gaya
+|
+Gajapati
+|
+DINARA
+|
+Draksharamam
+|
+Jagatsinghapur
+|
+Debagarh
+|
+PIRO
+|
+Vissannapetaa
+|
+Godhra
+|
+Rameswaram
+|
+Thalavadi
+|
+HELENCHA
+|
+Hazaribag
+|
+HINGALGANJ
+|
+HILSA
+|
+Nallajerla
+|
+JAGDISHPUR
+|
+PAVAPURI
+|
+PHUSRO
+|
+Phek
+|
+CumbumAP
+|
+Balaghat
+|
+Pandhurna
+|
+Sausar
+|
+SHEOHAR
+|
+BHORE
+|
+Asansol
+|
+BHANJANAGAR
+|
+Ankleshwar
+|
+Palitana
+|
+Sagar
+|
+Bharuch
+|
+Madhubani
+|
+Bettiah
+|
+BOKAKHAT
+|
+Nagpur
+|
+Sambalpur
+|
+Eluru
+|
+Ghaziabad
+|
+Pilakhua District
+|
+Delhi
+|
+Gurgaon
+|
+Bangalore
+|
+Chikkaballapura District
+|
+Srikakulam Disctrict
+|
+Vizianagaram Disctrict
+|
+Yanam District
+|
+Patna
+|
+Puri
+|
+Gautam Buddha Nagar District
+|
+Anantapur District
+|
+Nagercoil
+|
+Perambalur
+|
+Karaikal
+|
+Perunali
+|
+Coonoor
+|
+Eral
+|
+Sankarapuram
+|
+Sattur
+|
+Tindivanam
+|
+Gurmatkal
+|
+Lingasugur
+|
+Indi
+|
+Ugar
+|
+Kolhar
+|
+Surathkal
+|
+Kunigal
+|
+Kozhenchery
+|
+Narayankhed
+|
+Bhimavaram
+|
+Vuyyuru
+|
+Kathipudi
+|
+Rajahmundry
+|
+Kandukur
+|
+Samarlakota
+|
+Bonakal
+|
+Tenali
+|
+Kondapi
+|
+Bikkavolu
+|
+Piduguralla
+|
+Cochin
+|
+Kodungallur
+|
+Poinachi
+|
+Kannur
+|
+Kasaragod
+|
+Munnar
+|
+Pazhayannur
+|
+Thachanattukara
+|
+Kuthumkal
+|
+Perumbavoor
+|
+UNNAO
+|
+Peralam
+|
+SHRAVASTI
+|
+BAHRAICH
+|
+Gummudipoondi
+|
+Ariyalur
+|
+Rayadurgam
+|
+Sirvella
+|
+Velgodu
+|
+Pakala
+|
+Galiveedu
+|
+Tadipatri
+|
+BIJNOR
+|
+Gorantla
+|
+Chagalamarri
+|
+Kalyandurg
+|
+Tadoor
+|
+BIRPARA
+|
+Mahabubabad
+|
+Chintoor
+|
+Nakerakal
+|
+Narsapur-TS
+|
+Narsampet
+|
+Aswaraopeta
+|
+Thirumalagiri
+|
+Bodhan
+|
+Jogipet
+|
+Karim Nagar
+|
+Modasa
+|
+Gopalganj
+|
+KONARK
+|
+Pakyong
+|
+Cherial
+|
+Songadh
+|
+KODALA
+|
+Koderma
+|
+Jagatsinghpur
+|
+Amreli
+|
+Barabanki District
+|
+Pench
+|
+Visakhapatnam District
+|
+DHOLI
+|
+Howrah
+|
+Badnagar
+|
+Deesa
+|
+Bulandshahr
+|
+Nagarkurnool
+|
+Gadwal
+|
+Jahangirabad
+|
+Anupshahar
+|
+Gudur
+|
+Khatauli
+|
+Baleswar
+|
+Balangir
+|
+BAGNAN
+|
+Shimla
+|
+BADAGADA
+|
+BABUJANG
+|
+Berachampa
+|
+AUL
+|
+ASTARANGA
+|
+ASIKA
+|
+RAJGANJ
+|
+Khargone
+|
+BEHRAMPUR
+|
+BENIPATTI
+|
+Banka
+|
+Bankura
+|
+BALLIGUDA
+|
+BAMRA
+|
+BASIRHAT
+|
+Bastar
+|
+Bardhaman
+|
+Bargarh
+|
+NAZIRPUR
+|
+GOGAMUKH
+|
+BARPETA
+|
+Nagaon
+|
+DOOMDOOMA
+|
+TINSUKIA
+|
+Nuapada
+|
+NULL
+|
+DIGBOI
+|
+DIBRUGARH
+|
+North Dinajpur
+|
+NORTH LAKHIMPUR
+|
+North 24 Parganas
+|
+North Cachar Hills
+|
+Dholka
+|
+Kheda
+|
+Udaipura
+|
+Gadarwara
+|
+Jaora
+|
+Nagda
+|
+Ratlam
+|
+Nadiad
+|
+Palanpur
+|
+Shimoga
+|
+Jagaluru
+|
+Siruguppa
+|
+Soraba
+|
+Ramdurg
+|
+Hospet
+|
+RAJGIR
+|
+Kotturu
+|
+Sindhanur
+|
+PETERBAR
+|
+kolar
+|
+Darrang
+|
+Darjiling
+|
+Wanaparthy
+|
+Dantewada
+|
+Balasore
+|
+Kendrapara
+|
+BHAGALPUR
+|
+RANGPO
+|
+Raigarh
+|
+RAIRAKHOL
+|
+Puruliya
+|
+RAGHUNATHPUR-BR
+|
+Bhadrak District
+|
+Konaseema District
+|
+Deoghar
+|
+DASPALLA
+|
+Srisailam
+|
+Theni
+|
+Ramanathapuram
+|
+Munuvalli
+|
+Ponnamaravathi
+|
+Pennagaram
+|
+Udayagiri
+|
+Rasipuram
+|
+Karaikudi
+|
+Harur
+|
+Tanuku
+|
+Honnavar
+|
+Ludhiana
+|
+Jalandhar
+|
+Indore
+|
+Basavakalyan
+|
+Mhow
+|
+Pithampur
+|
+Ludhiana
+|
+Hapur
+|
+Chandigarh Tricity
+|
+East-Godavari-2
+|
+Chittoor District
+|
+Tiruvallur District
+|
+Bidar District
+|
+Sangareddy District
+|
+Ayodhya District
+|
+Bihar Sharif
+|
+Tirwanganj
+|
+Ranipet
+|
+Velur
+|
+Razole
+|
+Kovvur
+|
+Tekkali
+|
+Narsapur
+|
+Markapur
+|
+Avinashi
+|
+Podili
+|
+Narasaraopet
+|
+Gudivada
+|
+Aruppukkottai
+|
+Dwaraka Tirumala
+|
+Adoni
+|
+Kotturu-AP
+|
+Macherla
+|
+Tadepalligudem
+|
+Chintalpudi
+|
+Salur
+|
+Mandapeta
+|
+Pedapadu
+|
+Gannavaram
+|
+Koyilandy
+|
+Parappa
+|
+Ayoor
+|
+Kottarakkara
+|
+Guruvayoor
+|
+Parippally
+|
+Changanacherry
+|
+Karimba
+|
+Karukachal
+|
+Areacode
+|
+Roorkee
+|
+Mulbagal
+|
+Katihar
+|
+Chavassery
+|
+Ankola
+|
+Bhalki
+|
+Sakleshpur
+|
+Badami
+|
+Huliyar
+|
+Chinnasalem
+|
+Dandeli
+|
+Channarayapatna
+|
+Cheyyar
+|
+Rajapalayam
+|
+Gudiyattam
+|
+Sankari
+|
+Salem
+|
+Sankarankovil
+|
+Khanapur
+|
+Talikoti
+|
+Pandikkad
+|
+Perinthalmanna
+|
+Alappuzha
+|
+Balussery
+|
+Pulpally
+|
+Kilimanoor
+|
+Manuguru
+|
+Babasagar
+|
+Bellampalli
+|
+Nirmal
+|
+Adilabad
+|
+Devarakonda
+|
+Bhuvanagiri
+|
+Bejjanki
+|
+Chingavanam
+|
+Sultan Bathery
+|
+BACHHRAWAN
+|
+Bhadrachalam
+|
+Machilipatnam
+|
+Khambhat
+|
+Hangal
+|
+Chotila
+|
+Wyra
+|
+KHODAGANJ
+|
+Pehowa
+|
+KHIZASARAI
+|
+Denkanikottai
+|
+Akola
+|
+Khagaria
+|
+Lunawada
+|
+Mansa
+|
+Hosur
+|
+Begusarai
+|
+Bihta
+|
+Udgir
+|
+Narketpalle
+|
+Buxar
+|
+Multai
+|
+Alleppey
+|
+Naini
+|
+Munger
+|
+Araria
+|
+Arakkonam
+|
+Lower Subansiri
+|
+Butibori
+|
+Longleng
+|
+Muzzafarpur
+|
+Mathura
+|
+Hathras
+|
+Visnagar
+|
+Itarsi
+|
+Khordha
+|
+Dewas
+|
+Bagru
+|
+Kurukshetra
+|
+Jamui
+|
+Madanapalle
+|
+Modinagar District
+|
+Yamuna Nagar
+|
+Kaithal
+|
+Ranihati
+|
+Mangalore
+|
+Mandideep
+|
+Pipariya
+|
+JHANJHARPUR
+|
+Jehanabad
+|
+KADOBAHAL
+|
+Jharsuguda
+|
+Kalahandi
+|
+Kaimur (Bhabua)
+|
+Manali
+|
+Bagula
+|
+Taherpur
+|
+Bulandshahr District
+|
+Hanskhali
+|
+Guskhara
+|
+Thakurnagar
+|
+Kangeyam
+|
+Erode
+|
+Vellakovil
+|
+Hanur
+|
+Molakalmuru
+|
+Nagamangala
+|
+Harpanahalli
+|
+Channagiri
+|
+Shanivarasanthe
+|
+Shiralakoppa
+|
+Krishnarajngr
+|
+Kudligi
+|
+Sandur
+|
+Dhone
+|
+COOCHBEHAR
+|
+DINHATA
+|
+MALDA
+|
+SHILLONG
+|
+AGARTALA
+|
+JALPAIGURI
+|
+Tirupattur
+|
+Parwanoo
+|
+ULUBERIA
+|
+Tuensang
+|
+Ashta
+|
+ALIPURDUAR
+|
+JAIGAON
+|
+Vaishali
+|
+Upper Subansiri
+|
+Seraikela-kharsawan
+|
+Sheikhpura
+|
+NAKASHIPARA
+|
+Nadia
+|
+Nalbari
+|
+Nalanda
+|
+NARAYANPUR
+|
+NARASINGHPUR
+|
+Nayagarh
+|
+Nawada
+|
+Pune
+|
+Nabarangapur
+|
+Muzaffarpur
+|
+Muddebihal
+|
+Kolkata
+|
+Yelburga
+|
+Chennai
+|
+Gurugram Rural
+|
+Indore Rural
+|
+Guwahati Rural
+|
+Bhopal Rural
+|
+Coimbatore Rural
+|
+Bhubaneswar Rural
+|
+Kolkata Rural
+|
+Kochi Rural
+|
+Bavla
+|
+Sonepur
+|
+Mokama
+|
+Nawada
+|
+Moga
+|
+Nakodar
+|
+Kanpur
+|
+Nabha
+|
+Anand
+|
+Pavagada
+|
+Kamptee
+|
+Kapadvanj
+|
+Karwar
+|
+Madhugiri
+|
+Virudhachalam
+|
+Usilampatti
+|
+Bhatkal
+|
+Virudhunagar
+|
+Perundurai
+|
+Kothapalli
+|
+Repalle
+|
+Tiruchengode
+|
+Palladam
+|
+Oddanchatram
+|
+Uravakonda
+|
+Avanigadda
+|
+Dhar
+|
+Polur
+|
+Arani
+|
+Bina
+|
+Jajapur
+|
+Gundlupet
+|
+Nipani
+|
+Sindagi
+|
+Sathyamangalam
+|
+Paramakudi
+|
+Kalpetta
+|
+PEDDAPALLI
+|
+Dhenkanal
+|
+Cumbum
+|
+Anthiyour
+|
+Thiruthuraipoondi
+|
+Chetpet
+|
+Sirkazhi
+|
+Vandavasi
+|
+Manamelkudi
+|
+Tuticorin
+|
+Ooty
+|
+Tiruvannamalai
+|
+Sedam
+|
+Piriyapatna
+|
+Navalgund
+|
+Mettala
+|
+Ullal
+|
+Aurad
+|
+Shahapur
+|
+Hirekerur
+|
+Sivaganga
+|
+Mettupalayam
+|
+Puthukkad
+|
+Mettur
+|
+Melur
+|
+Kadpadi
+|
+Attur
+|
+Uthangarai
+|
+Shamli
+|
+Mundgod
+|
+Nedumangad
+|
+Chengannur
+|
+Tandur-TL
+|
+Edavanna
+|
+Kuttikol
+|
+Nenmara
+|
+Tirur
+|
+Muvattupuzha
+|
+Manopad
+|
+Pedabayalu
+|
+Penugonda
+|
+Yellamanchili
+|
+Nileshwar
+|
+Manthani
+|
+Tadvai
+|
+Huzurabad
+|
+Krishna District
+|
+Yellare
+|
+Agali
+|
+Pathanamthitta
+|
+West-Godavari
+|
+Siliguri
+|
+Manvi
+|
+Alair
+|
+Khanapur-TS
+|
+Shaheed Bhagat Singh Nagar
+|
+Kota
+|
+Madhepura
+|
+Chintamani
+|
+Ambur
+|
+Channapatna
+|
+Maddur
+|
+Nabadwip
+|
+Katwa
+|
+Kharagpur
+|
+Mammit
+|
+Kothagudem
+|
+Malkangiri
+|
+MALMALIYA
+|
+MAIRWA
+|
+MAKHDUMPUR
+|
+MAHARAJGANJ-BH
+|
+Mahasamund
+|
+Vikarabad
+|
+Churu
+|
+Bhadradri Kothagudem District
+|
+Dahegam
+|
+Cuttack
+|
+Jangaon
+|
+Dindigul
+|
+Sihor
+|
+Sitapur
+|
+Beawar
+|
+Udumalaipettai
+|
+Pollachi
+|
+Vijapur
+|
+Dharapuram
+|
+Canning
+|
+Tiptur
+|
+Mehmedabad
+|
+Fatehpur
+|
+Tirora
+|
+Punganur
+|
+Janjgir-champa
+|
+Arsikere
+|
+Karur
+|
+Gobichettipalayam
+|
+Seoni
+|
+Daryapur Banosa
+|
+Chaklasi
+|
+Thanesar
+|
+Imphal West
+|
+Punjab
+|
+Bangarpet
+|
+Visakhapatnam
+|
+Byadgi
+|
+East Godavari District
+|
+Bilimora
+|
+Kurugodu
+|
+Sira
+|
+Bethamangala
+|
+Nanjangud
+|
+Sagara
+|
+Kollegala
+|
+Shikaripur
+|
+Gangavathi
+|
+Hiriyur
+|
+Hosadurga
+|
+Madanapalli
+|
+Tirupati
+|
+Miryalaguda
+|
+Kalwakurthy
+|
+Jayankondam
+|
+Hajipur
+|
+Kadapa
+|
+Kumbakonam
+|
+Hasnabad
+|
+Bhadrak
+|
+Pakur
+|
+PAKRIBARWAN
+|
+East Midnapore
+|
+East Khasi Hills
+|
+East Sikkim
+|
+East Siang
+|
+EKMA
+|
+East Singhbhum
+|
+Ganjam
+|
+GALLERI
+|
+West Midnapore
+|
+Kochi
+|
+West Singhbhum
+|
+Palamaner
+|
+Zunhebotto
+|
+Palamau
+|
+Gursahaiganj
+|
+Pulivendula
+|
+BALRAMPUR
+|
+Nagpur Rural
+|
+Patna Rural
+|
+Mumbai Rural
+|
+Mysore Rural
+|
+Vadodara Rural
+|
+Jaipur Rural
+|
+Pune Rural
+|
+Surat Rural
+|
+Aligarh District
+|
+Amethi District
+|
+Kishangarh
+|
+Puducherry
+|
+Ramnagar
+|
+Krishnagiri
+|
+Ramtek
+|
+Moradabad
+|
+Shahjahanpur
+|
+Tumakuru
+|
+Kottayam
+|
+Rajamahendravaram
+|
+Kakinada
+|
+Kundli
+|
+Vaniyambadi
+|
+Rohtas
+|
+DehraDun
+|
+Ri Bhoi
+|
+Venjaramoodu
+|
+Rayagada
+|
+Saharanpur District
+|
+Aligarh
+|
+Bhogapuram
+|
+Bagepalli
+|
+Madhubani
+|
+Bhimadole
+|
+Palakollu
+|
+Pamarru
+|
+Madurai
+|
+Kanigiri
+|
+Rampachodavaram
+|
+Sompeta
+|
+Singarayakonda
+|
+Kodaikanal
+|
+Aland
+|
+Amravati
+|
+Jamshedpur
+|
+Kolhapur
+|
+Kalaburagi
+|
+Guwahati
+|
+Bhubaneshwar-Cuttack
+|
+Raebareli District
+|
+Khammam
+|
+Suryapet District
+|
+Tarakeswar
+|
+Sambhal District
+|
+MARHOWARAH
+|
+Chitradurga
+|
+Siddipet District
+|
+Nagapattinam
+|
+Bellary
+|
+Vallioor
+|
+Tiruchendur
+|
+Thiruvadanai
+|
+Ambasamudram
+|
+Kallakurichi
+|
+Tirunelveli
+|
+Azhagappapuram
+|
+Tiruchi
+|
+Kanchipuram
+|
+Viluppuram
+|
+Vadipatti
+|
+Phagwara
+|
+Jagraon
+|
+Honnali
+|
+Kowthal
+|
+Devadurga
+|
+Kalasa
+|
+Jewargi
+|
+Badvel
+|
+Kuppam
+|
+B Kothakota
+|
+Nandyal
+|
+Kudair
+|
+Betamcherla
+|
+Marigaon
+|
+Atmakur-TS
+|
+Hyderabad Rural
+|
+Chalakudy
+|
+Kanjiramattom
+|
+Alakode
+|
+Himachal Pradesh
+|
+Chiramanangad
+|
+Akaloor
+|
+Chinnur
+|
+Irinjalakuda
+|
+Parkal
+|
+Robertsonpet
+|
+Yellareddipet
+|
+Luxettipet
+|
+Bhainsa
+|
+Banswada
+|
+Amangal
+|
+Mothkur
+|
+Jammikunta
+|
+Yellandu
+|
+CHERLA
+|
+Ichoda
+|
+Makthal
+|
+Navipet
+|
+Veenavanka
+|
+Sirikonda
+|
+MASAURHI
+|
+Anjumoorthy
+|
+Mallapur
+|
+Yerravaram
+|
+Arimbur
+|
+Kanthi
+|
+Durg
+|
+East Champaran
+|
+Bokaro
+|
+DHAKA
+|
+DHAKUAKHANA
+|
+Vijayapura
+|
+Sidlaghatta
+|
+Hindupur
+|
+Kalna
+|
+Gauribidanur
+|
+Doddaballapura
+|
+Jewar
+|
+Muradnagar
+|
+Tribeni
+|
+Santipur
+|
+JAGDISHPUR
+|
+West Garo Hills
+|
+Borsad
+|
+Petlad
+|
+Valsad
+|
+Daman
+|
+Silvassa
+|
+Bhojpur
+|
+Siwan
+|
+Ranchi
+|
+Jhunjhunu
+|
+West Godavari District
+|
+Haldia
+|
+Davangere
+|
+Tuni
+|
+Dharampur
+|
+Rajpipla
+|
+Channarayapattana
+|
+Ghanpur
+|
+Athagad
+|
+Krishnarajanagara
+|
+Sidhauli
+|
+Malpura
+|
+Dharwad
+|
+Barh
+|
+Bailhongal
+|
+ALNAVAR
+|
+Belgaum
+|
+Bankapura
+|
+MINAKHAN
+|
+Mayurbhanj
+|
+MOHAMMADPUR
+|
+MIRGANJ
+|
+Mokokchung
+|
+MOHANA
+|
+Murshidabad
+|
+Munger
+|
+Siddapur
+|
+Challakere
+|
+Kadur
+|
+Chamarajanagar
+|
+Hunsur
+|
+Dudu
+|
+Hagaribommanahalli
+|
+Srinivaspur
+|
+Sonapur
+|
+Siwan
+|
+Sonitpur
+|
+SONBARSA
+|
+SINGHIA
+|
+Simdega
+|
+Sitamarhi
+|
+SIRDALA
+|
+South Dinajpur
+|
+South 24 Parganas
+|
+Kushtagi
+|
+Ilkal
+|
+Karkala
+|
+Gonikoppal
+|
+Chittapur
+|
+Raibag
+|
+Chikodi
+|
+Thirthahalli
+|
+DIGAPAHANDI
+|
+Dumka
+|
+Dhemaji
+|
+Dhubri
+|
+Dhalai
+|
+Dhamtari
+|
+Sirsi
+|
+Panja
+|
+Vempalli
+|
+Ranni
+|
+Krishnarajpet
+|
+Fatehgarh</a></h3>
+</div>
+</center>
+		<form>
+			<div class="form-group">
+				<label for="experience">rate your experience</label>
+				<select class="form-control" id="set1">
+					<option>1 star</option>
+					<option>2 star</option>
+					<option>3 star</option>
+					<option>4 star</option>
+					<option>5 star</option>
+					<option>6 star</option>
+					<option>no comments simply waste</option>z
+				</select>
+			</div>
+		</form>
+					
+	</body>
+</html>
